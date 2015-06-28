@@ -1,0 +1,194 @@
+doctype html
+html(lang="ru")
+	head
+		title Shop page
+		meta(charset="UTF-8")
+		meta(name="description" content="Магазин техники и аксесуаров Apple")
+		meta(name="keywords" content="shop apple mac iphone ipad")
+		meta(name="author" content="Alex")
+		<!-- build:css css/main.min.css -->
+		link(rel="stylesheet", href="../css/main.css")
+		<!-- endbuild -->
+		<!-- build:css css/vendor.min.css -->
+		//bower:css
+		link(rel='stylesheet', href='../bower_components/normalize.css/normalize.css')
+		//endbower
+		<!-- endbuild -->
+		<!-- build:js js/modernizr.min.js -->
+		script(src='/bower_components/modernizr/modernizr.js')
+		<!-- endbuild -->
+	body
+		.main_page
+			header.page_header
+				.contacts
+					.container
+						.contacts__social_buttons.social_buttons
+							ul.social_buttons__list
+								li.social_item__item
+									a(href="#").social_button.social_button--site-vk Вконтакте
+								li.social_item__item
+									a(href="#").social_button.social_button--site-fb Facebook
+								li.social_item__item
+									a(href="#").social_button.social_button--site-tw Twitter
+						a(href="#").adress г. Москва ул. Новая 24б, офис 214
+						p.tel_number
+							span.tel_number__prefix +7
+							span.tel_number__code (921)
+							span.tel_number__text 322 12 32
+				.main_header
+					.container
+						.main_header__logo.logo
+							img.logo__image('/img/logo.jpg')
+							h1.logo__text ЭпплShop
+						form.main_header__search.search
+							input(type="text" placeholder="iMac 27 дюймов").search__input
+							button(type="submit") Поиск
+						.main_header__link_blocks
+							a(href="#").link Карта проезда
+							a(href="#").link История заказов
+						.main_header__basket.basket
+							a(href="#").basket__basket_link Корзина (3)
+							ul.basket__list
+								li.basket__item
+									img.basket__item_img
+									a(href="#").basket__item_link.link iPhone 6
+								li.basket__item
+									img.basket__item_img
+									a(href="#").basket__item_link.link iPad Air Wi-Fi + Cellural 128GB - Silver
+								li.basket__item
+									img.basket__item_img
+									a(href="#").basket__item_link.link Macbook Air
+				nav.shop_menu
+					.container
+						ul.shop_menu__list
+							li.shop_menu__item
+								a(href="#").shop_menu__link Мобильные телефоны
+							li.shop_menu__item
+								a(href="#").shop_menu__link Планшеты
+							li.shop_menu__item
+								a(href="#").shop_menu__link Mp3 плееры
+							li.shop_menu__item
+								a(href="#").shop_menu__link Персоональные компьютеры
+							li.shop_menu__item
+								a(href="#").shop_menu__link Ноутбуки
+							li.shop_menu__item
+								a(href="#").shop_menu__link Аксесуары
+			.content_page
+				.container
+					.breadcrumbs
+						ul.breadcrumbs__list
+							li.breadcrumbs__item
+								a(href="#").breadcrumbs__link.link Главная
+							li.breadcrumbs__item
+								a(href="#").breadcrumbs__link.link Каталог
+							li.breadcrumbs__item
+								span.breadcrumbs__current iPad Air Wi-Fi + Cellural 128GB - Silver
+					.product
+						.product__gallery
+						.product__info.product_info
+							h2.product_info__name iPad Air Wi-Fi + Cellural 128GB - Silver
+							.product_info__description
+								//Контент-часть, без классов
+								table
+									tr
+										td Артикул
+										td 54476574
+									tr
+										td Опция
+										td включена
+									tr
+										td Цвет
+										td серебристый
+									tr
+										td Артикул
+										td 54476574
+									tr
+										td Опция
+										td включена
+									tr
+										td Цвет
+										td серебристый
+									tr
+										td Артикул
+										td 54476574
+									tr
+										td Опция
+										td включена
+									tr
+										td Цвет
+										td серебристый
+					.about_shop
+						h2.about_shop__title Пара слов о магазине
+						p.about_shop__text.
+							 Lorem ipsum dolor sit amet, consectetur 
+							 adipisicing elit. Voluptatibus dolores, 
+							 enim amet non saepe atque vel natus illo 
+							 quia error repudiandae pariatur ab cumque 
+							 cum est sapiente sed quaerat assumenda voluptas 
+							 nisi modi dicta? Et accusamus nemo alias, ab 
+							 hic totam magni temporibus, assumenda porro qui, 
+							 soluta fuga sequi repudiandae.
+						p.about_shop__text.
+							 Lorem ipsum dolor sit amet, consectetur 
+							 adipisicing elit. Quam iste, doloremque ducimus 
+							 beatae, cupiditate veritatis corrupti sapiente 
+							 sed unde nesciunt, expedita velit, architecto! 
+							 Aliquid distinctio explicabo ducimus consequatur, 
+							 eveniet unde quas a sint qui quam nihil numquam, 
+							 corporis eligendi omnis!
+						p.about_shop__text.
+							 Lorem ipsum dolor sit amet, consectetur 
+							 adipisicing elit. Possimus reprehenderit 
+							 quibusdam excepturi iusto, quaerat vel facere 
+							 eaque consequatur dignissimos porro ipsam 
+							 laborum. Voluptas veniam eveniet quo dolorum 
+							 aliquam, repellendus quasi voluptatibus labore! 
+							 Modi quis libero deleniti, molestias, non rem 
+							 consequuntur!
+		.page_footer
+			.container
+				.page_footer__logo.second_logo
+					img.second_logo__image(src="/img/logo.jpg")
+					h1.second_logo__text ЭпплShop
+				nav.full_menu
+					.full_menu__block
+						p.full_menu__category_name О магазине
+						ul.full_menu__items
+							li.full_menu__item
+								a(href="#").full_menu__link О нас
+							li.full_menu__item
+								a(href="#").full_menu__link Наши цены
+							li.full_menu__item
+								a(href="#").full_menu__link Наши скидки
+							li.full_menu__item
+								a(href="#").full_menu__link Акции
+					.full_menu__block
+						p.full_menu__category_name Каталог
+						ul.full_menu__items
+							li.full_menu__item
+								a(href="#").full_menu__link Смартфоны
+							li.full_menu__item
+								a(href="#").full_menu__link Планшеты
+							li.full_menu__item
+								a(href="#").full_menu__link Компьютеры
+							li.full_menu__item
+								a(href="#").full_menu__link Аксесуары
+					.full_menu__block
+						p.full_menu__category_name Контакты
+						ul.full_menu__items
+							li.full_menu__item
+								a(href="#").full_menu__link Телефоны
+							li.full_menu__item
+								a(href="#").full_menu__link Адреса
+							li.full_menu__item
+								a(href="#").full_menu__link Карта проезда
+							li.full_menu__item
+								a(href="#").full_menu__link Обратная связь
+		<!-- build:js js/vendor.min.js -->
+		//bower:js
+		script(src='../bower_components/jquery/dist/jquery.js')
+		//endbower
+		<!-- endbuild -->
+		<!-- build:js js/main.min.js -->
+		script(src='/js/main.js')
+		<!-- endbuild -->

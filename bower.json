@@ -1,0 +1,27 @@
+{
+  "name": "loftschool-shop",
+  "version": "0.1.0",
+  "authors": [
+    "Alex Ivanov <zmn.wtr@gmail.com>"
+  ],
+  "description": "Portfolio student page",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.11",
+    "normalize.css": "~3.0.3",
+    "modernizr": "~2.8.3"
+  },
+  "overrides": {
+    "modernizr": {
+      "main" : []
+    }
+  }
+}

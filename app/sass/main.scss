@@ -1,0 +1,47 @@
+@import 'settings';
+@import 'mixins';
+
+html, body{
+	height: 100%;
+	color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+}
+
+h1{	font-size: 27px; }
+h2{	font-size: 25px; }
+h3{	font-size: 23px; }
+h4{	font-size: 21px; }
+h5{	font-size: 19px; }
+h6{	font-size: 17px; }
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 980px;
+	background-image: url('../img/bg.png');
+	font-family: sans-serif;
+}
+
+.hidden{
+	display: none!important;
+}
+
+.main-page{
+	min-height: 100%;
+	margin-bottom: - $size-footer;
+	&:after{
+		display: block;
+		content: "";
+		height: $size-footer;
+	}
+}
+
+.page-footer{
+	background-color: $color-lightgrey;
+	height: $size-footer;
+}
