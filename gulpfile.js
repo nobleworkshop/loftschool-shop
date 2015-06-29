@@ -37,7 +37,8 @@ gulp.task('watch', function () {
 	gulp.watch('bower.json', ['wiredep']);
 	gulp.watch([
 		'app/js/**/*.js',
-		'app/css/**/*.css'
+		'app/css/**/*.css',
+		'app/*.html'
 	]).on('change', reload);
 });
 
@@ -47,8 +48,7 @@ gulp.task('jade', function() {
 		.pipe(jade({
 			pretty: '	'
 		}))
-		.pipe(gulp.dest('./app/'))
-		.pipe(reload({stream: true}));
+		.pipe(gulp.dest('./app/'));
 });
 
 // Компилируем SCSS

@@ -1,10 +1,7 @@
 @mixin clearfix{
 	&:after, &:before{
 		content:"";
-		display:block;
-		clear:both;
-	}
-	&:before{
 		display:table;
+		clear:both;
 	}
 }

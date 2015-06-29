@@ -21,29 +21,38 @@
 					<div class="container">
 						<div class="contacts__social_buttons social_buttons">
 							<ul class="social_buttons__list">
-								<li class="social_item__item"><a href="#" class="social_button social_button--site-vk">Вконтакте</a></li>
-								<li class="social_item__item"><a href="#" class="social_button social_button--site-fb">Facebook</a></li>
-								<li class="social_item__item"><a href="#" class="social_button social_button--site-tw">Twitter</a></li>
+								<li class="social_buttons__item"><a href="#" class="social_buttons__icon social_buttons__icon--site-vk">Вконтакте</a></li>
+								<li class="social_buttons__item"><a href="#" class="social_buttons__icon social_buttons__icon--site-fb">Facebook</a></li>
+								<li class="social_buttons__item"><a href="#" class="social_buttons__icon social_buttons__icon--site-tw">Twitter</a></li>
 							</ul>
-						</div><a href="#" class="adress">г. Москва ул. Новая 24б, офис 214</a>
-						<p class="tel_number"><span class="tel_number__prefix">+7</span><span class="tel_number__code">(921)</span><span class="tel_number__text">322 12 32</span></p>
+						</div>
+						<div class="address contacts__address"><a href="#" class="address__link">г. Москва ул. Новая 24б, офис 214</a></div>
+						<div class="contacts__phone phone_number"><span class="phone_number__prefix">+7 (921)</span><span class="phone_number__text">322 12 32</span></div>
 					</div>
 				</div>
 				<div class="main_header">
 					<div class="container">
-						<div class="main_header__logo logo"><img /img/logo.jpg class="logo__image">
+						<div class="main_header__logo logo"><img src="../img/logo.png" class="logo__image">
 							<h1 class="logo__text">ЭпплShop</h1>
 						</div>
-						<form class="main_header__search search">
-							<input type="text" placeholder="iMac 27 дюймов" class="search__input">
-							<button type="submit">Поиск</button>
-						</form>
-						<div class="main_header__link_blocks"><a href="#" class="link">Карта проезда</a><a href="#" class="link">История заказов</a></div>
-						<div class="main_header__basket basket"><a href="#" class="basket__basket_link">Корзина (3)</a>
+						<div class="main_header__search search">
+							<form class="search__form">
+								<input type="text" placeholder="iMac 27 дюймов" class="search__input">
+								<button type="submit" class="search__submit">Поиск</button>
+							</form>
+						</div>
+						<div class="main_header__links"><a href="#" class="main_header__link link">Карта проезда</a><a href="#" class="main_header__link link">История заказов</a></div>
+						<div class="main_header__basket basket"><a href="#" class="basket__button"><span class="basket__text">Корзина (3)</span></a>
 							<ul class="basket__list">
-								<li class="basket__item"><img class="basket__item_img"><a href="#" class="basket__item_link link">iPhone 6</a></li>
-								<li class="basket__item"><img class="basket__item_img"><a href="#" class="basket__item_link link">iPad Air Wi-Fi + Cellural 128GB - Silver</a></li>
-								<li class="basket__item"><img class="basket__item_img"><a href="#" class="basket__item_link link">Macbook Air</a></li>
+								<li class="basket__item">
+									<div class="basket__img_wrapper"><img class="basket__img"></div><a href="#" class="basket__item_link link">iPhone 6</a>
+								</li>
+								<li class="basket__item">
+									<div class="basket__img_wrapper"><img class="basket__img"></div><a href="#" class="basket__item_link link">iPad Air Wi-Fi + Cellural 128GB - Silver</a>
+								</li>
+								<li class="basket__item">
+									<div class="basket__img_wrapper"><img class="basket__img"></div><a href="#" class="basket__item_link link">Macbook Air</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -52,7 +61,7 @@
 					<div class="container">
 						<ul class="shop_menu__list">
 							<li class="shop_menu__item"><a href="#" class="shop_menu__link">Мобильные телефоны</a></li>
-							<li class="shop_menu__item"><a href="#" class="shop_menu__link">Планшеты</a></li>
+							<li class="shop_menu__item"><a href="#" class="shop_menu__link shop_menu__link--active">Планшеты</a></li>
 							<li class="shop_menu__item"><a href="#" class="shop_menu__link">Mp3 плееры</a></li>
 							<li class="shop_menu__item"><a href="#" class="shop_menu__link">Персоональные компьютеры</a></li>
 							<li class="shop_menu__item"><a href="#" class="shop_menu__link">Ноутбуки</a></li>
@@ -154,12 +163,12 @@
 		</div>
 		<div class="page_footer">
 			<div class="container">
-				<div class="page_footer__logo second_logo"><img src="/img/logo.jpg" class="second_logo__image">
-					<h1 class="second_logo__text">ЭпплShop</h1>
+				<div class="page_footer__logo logo"><img src="../img/wh-logo.png" class="logo__image">
+					<h1 class="logo__text">ЭпплShop</h1>
 				</div>
-				<nav class="full_menu">
+				<nav class="full_menu page_footer__menu">
 					<div class="full_menu__block">
-						<p class="full_menu__category_name">О магазине</p>
+						<h6 class="full_menu__title">О магазине</h6>
 						<ul class="full_menu__items">
 							<li class="full_menu__item"><a href="#" class="full_menu__link">О нас</a></li>
 							<li class="full_menu__item"><a href="#" class="full_menu__link">Наши цены</a></li>
@@ -168,7 +177,7 @@
 						</ul>
 					</div>
 					<div class="full_menu__block">
-						<p class="full_menu__category_name">Каталог</p>
+						<h6 class="full_menu__title">Каталог</h6>
 						<ul class="full_menu__items">
 							<li class="full_menu__item"><a href="#" class="full_menu__link">Смартфоны</a></li>
 							<li class="full_menu__item"><a href="#" class="full_menu__link">Планшеты</a></li>
@@ -177,7 +186,7 @@
 						</ul>
 					</div>
 					<div class="full_menu__block">
-						<p class="full_menu__category_name">Контакты</p>
+						<h6 class="full_menu__title">Контакты</h6>
 						<ul class="full_menu__items">
 							<li class="full_menu__item"><a href="#" class="full_menu__link">Телефоны</a></li>
 							<li class="full_menu__item"><a href="#" class="full_menu__link">Адреса</a></li>
@@ -186,6 +195,14 @@
 						</ul>
 					</div>
 				</nav>
+				<div class="page_footer__apps app_list"><a class="app_list__item app_list__item--market-google">Доступно в Google play</a><a class="app_list__item app_list__item--market-apple">Доступно в AppStore</a></div>
+				<div class="page_footer__socials social_buttons">
+					<ul class="social_buttons__list">
+						<li class="social_buttons__item social_buttons__item--size-large"><a href="#" class="social_buttons__icon social_buttons__icon--site-vk">Вконтакте</a></li>
+						<li class="social_buttons__item social_buttons__item--size-large"><a href="#" class="social_buttons__icon social_buttons__icon--site-fb">Facebook</a></li>
+						<li class="social_buttons__item social_buttons__item--size-large"><a href="#" class="social_buttons__icon social_buttons__icon--site-tw">Twitter</a></li>
+					</ul>
+				</div>
 			</div>
 		</div><!-- build:js js/vendor.min.js -->
 		<!--bower:js-->

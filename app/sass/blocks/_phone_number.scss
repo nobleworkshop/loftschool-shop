@@ -1,0 +1,11 @@
+.phone_number{
+	font-size: 25px;
+
+	&__prefix{
+		margin-right: 10px;
+
+		font-size: 0.6em;
+		vertical-align: top;
+		color: $color-bright;
+	}
+}

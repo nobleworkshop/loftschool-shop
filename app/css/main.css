@@ -1,6 +1,9 @@
 html, body {
   height: 100%;
-  color: #4a545d; }
+  color: #5c7b98; }
+
+a {
+  color: inherit; }
 
 h1 {
   font-size: 27px; }
@@ -20,27 +23,262 @@ h5 {
 h6 {
   font-size: 17px; }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
 body {
-  min-width: 980px;
-  background-image: url("../img/bg.png");
+  min-width: 1020px;
   font-family: sans-serif; }
+
+input, button {
+  outline: none; }
+
+.link {
+  color: #00b9fe; }
+  .link:hover {
+    color: #613993; }
 
 .hidden {
   display: none !important; }
 
+.container {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto; }
+  .container:after, .container:before {
+    content: "";
+    display: table;
+    clear: both; }
+
 .main-page {
   min-height: 100%;
-  margin-bottom: -80px; }
+  margin-bottom: -225px; }
   .main-page:after {
     display: block;
     content: "";
-    height: 80px; }
+    height: 225px; }
 
 .page-footer {
-  background-color: #eff3f7;
-  height: 80px; }
+  height: 225px; }
+
+.contacts {
+  height: 40px;
+  background-color: #44626e;
+  color: #fff; }
+  .contacts__social_buttons {
+    position: absolute;
+    left: 0;
+    top: 8px; }
+  .contacts__address {
+    margin: 7px auto; }
+  .contacts__phone {
+    position: absolute;
+    right: 0;
+    top: 5px; }
+
+.social_buttons__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.social_buttons__item {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-left: 7px;
+  box-shadow: 1px 1px 5px -1px black; }
+  .social_buttons__item--size-large {
+    width: 36px;
+    height: 36px;
+    margin-left: 10px; }
+  .social_buttons__item:first-child {
+    margin-left: 0; }
+
+.social_buttons__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-indent: -9999px; }
+  .social_buttons__icon--site-vk {
+    background-image: url("../img/vk.png"); }
+  .social_buttons__icon--site-fb {
+    background-image: url("../img/fb.png"); }
+  .social_buttons__icon--site-tw {
+    background-image: url("../img/tw.png"); }
+
+.address {
+  display: table;
+  padding-left: 25px;
+  height: 22px;
+  line-height: 22px;
+  vertical-align: middle;
+  background-image: url("../img/place.png");
+  background-repeat: no-repeat; }
+  .address__link {
+    font-size: 13px;
+    text-decoration: none; }
+
+.phone_number {
+  font-size: 25px; }
+  .phone_number__prefix {
+    margin-right: 10px;
+    font-size: 0.6em;
+    vertical-align: top;
+    color: #00b9fe; }
+
+.main_header {
+  height: 100px;
+  background-color: #edf2f8; }
+  .main_header__logo {
+    float: left;
+    margin-top: 25px; }
+  .main_header__search {
+    float: left;
+    margin-left: 60px;
+    margin-top: 35px; }
+  .main_header__links {
+    float: left;
+    margin-top: 45px;
+    margin-left: 5px; }
+  .main_header__link {
+    margin-left: 20px;
+    font-size: 13px; }
+  .main_header__basket {
+    float: right;
+    margin-top: 30px; }
+
+.logo__text {
+  position: absolute;
+  text-indent: -9999px; }
+
+.search__form {
+  display: table; }
+
+.search__input {
+  display: table-cell;
+  width: 255px;
+  padding: 10px;
+  border: 1px #d5dadf solid;
+  border-right: none; }
+
+.search__submit {
+  display: table-cell;
+  padding: 10px 15px;
+  border: 1px #00b9fe solid;
+  border-left: none;
+  font-weight: bold;
+  background-color: #00b9fe;
+  color: #fff; }
+
+.basket__button {
+  display: block;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  background-color: #fff;
+  background-image: url("../img/basket.png");
+  background-repeat: no-repeat;
+  background-position: 10px center; }
+
+.basket__list {
+  display: none; }
+
+.basket__text {
+  font-size: 13px; }
+
+.shop_menu {
+  background-color: #f7f7f7; }
+  .shop_menu__list {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style: none; }
+  .shop_menu__item {
+    float: left; }
+  .shop_menu__link {
+    position: relative;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 0px;
+    text-decoration: none; }
+    .shop_menu__link:after, .shop_menu__link:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      z-index: 2;
+      display: block;
+      width: 0;
+      height: 0;
+      margin-top: -50px;
+      border-top: transparent 50px solid;
+      border-bottom: transparent 50px solid;
+      border-left: #f7f7f7 30px solid; }
+    .shop_menu__link:before {
+      z-index: 1;
+      margin-left: 1px;
+      border-left: #dedede 30px solid; }
+    .shop_menu__link:hover {
+      background-color: #edf2f8; }
+      .shop_menu__link:hover:after {
+        border-left-color: #edf2f8; }
+    .shop_menu__link--active {
+      color: #fff;
+      background-color: #00b9fe; }
+      .shop_menu__link--active:after {
+        border-left-color: #00b9fe; }
+      .shop_menu__link--active:hover {
+        background-color: #00b9fe; }
+        .shop_menu__link--active:hover:after {
+          border-left-color: #00b9fe; }
+
+.page_footer {
+  height: 230px;
+  background: #613993 url("../img/footer-bg.png");
+  color: #fff; }
+  .page_footer__logo {
+    position: absolute;
+    left: 0;
+    top: 95px; }
+  .page_footer__menu {
+    display: table;
+    margin: 50px auto; }
+  .page_footer__apps {
+    position: absolute;
+    right: 0;
+    top: 70px; }
+  .page_footer__socials {
+    position: absolute;
+    top: 130px;
+    right: 45px; }
+
+.full_menu__block {
+  display: inline-block;
+  width: 160px; }
+
+.full_menu__title {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px; }
+
+.full_menu__items {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.full_menu__item {
+  margin-bottom: 10px; }
+
+.app_list__item {
+  float: right;
+  display: block;
+  width: 90px;
+  height: 32px;
+  margin-left: 5px;
+  text-indent: -9999px; }
+  .app_list__item--market-apple {
+    background-image: url("../img/appstore.png"); }
+  .app_list__item--market-google {
+    background-image: url("../img/googleplay.png"); }

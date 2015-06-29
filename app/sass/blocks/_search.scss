@@ -1,0 +1,22 @@
+.search{
+	&__form{
+		display: table;
+	}
+	&__input{
+		display: table-cell;
+		width: 255px;
+		padding: 10px;
+		border: 1px $color-light*0.9 solid;
+		border-right: none;
+	}
+	&__submit{
+		display: table-cell;
+		padding: 10px 15px;
+		border: 1px $color-bright solid;
+		border-left: none;
+		
+		font-weight: bold;
+		background-color: $color-bright;
+		color: #fff;
+	}
+}

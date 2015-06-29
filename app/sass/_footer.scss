@@ -1,0 +1,61 @@
+@import 'settings';
+.page_footer{
+	height: 230px;
+	background: $color-violet url('../img/footer-bg.png');
+	color: #fff;
+
+	&__logo{
+		position: absolute;
+		left: 0;
+		top: 95px;
+	}
+	&__menu{
+		display: table;
+		margin: 50px auto;
+	}
+	&__apps{
+		position: absolute;
+		right: 0;
+		top: 70px;
+	}
+	&__socials{
+		position: absolute;
+		top: 130px;
+		right: 45px;
+	}
+}
+.full_menu{
+	&__block{
+		display: inline-block;
+		width: 160px;
+	}
+	&__title{
+		font-weight: bold;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	&__items{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__item{
+		margin-bottom: 10px;
+	}
+}
+.app_list{
+	&__item{
+		float: right;
+		display: block;
+		width: 90px;
+		height: 32px;
+		margin-left: 5px;
+		text-indent: -9999px;
+		&--market-apple{
+			background-image: url('../img/appstore.png');
+		}
+		&--market-google{
+			background-image: url('../img/googleplay.png');
+		}
+	}
+}

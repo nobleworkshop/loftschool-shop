@@ -24,39 +24,44 @@ html(lang="ru")
 					.container
 						.contacts__social_buttons.social_buttons
 							ul.social_buttons__list
-								li.social_item__item
-									a(href="#").social_button.social_button--site-vk Вконтакте
-								li.social_item__item
-									a(href="#").social_button.social_button--site-fb Facebook
-								li.social_item__item
-									a(href="#").social_button.social_button--site-tw Twitter
-						a(href="#").adress г. Москва ул. Новая 24б, офис 214
-						p.tel_number
-							span.tel_number__prefix +7
-							span.tel_number__code (921)
-							span.tel_number__text 322 12 32
+								li.social_buttons__item
+									a(href="#").social_buttons__icon.social_buttons__icon--site-vk Вконтакте
+								li.social_buttons__item
+									a(href="#").social_buttons__icon.social_buttons__icon--site-fb Facebook
+								li.social_buttons__item
+									a(href="#").social_buttons__icon.social_buttons__icon--site-tw Twitter
+						.address.contacts__address
+							a(href="#").address__link г. Москва ул. Новая 24б, офис 214
+						.contacts__phone.phone_number
+							span.phone_number__prefix +7 (921)
+							span.phone_number__text 322 12 32
 				.main_header
 					.container
 						.main_header__logo.logo
-							img.logo__image('/img/logo.jpg')
+							img.logo__image(src='../img/logo.png')
 							h1.logo__text ЭпплShop
-						form.main_header__search.search
-							input(type="text" placeholder="iMac 27 дюймов").search__input
-							button(type="submit") Поиск
-						.main_header__link_blocks
-							a(href="#").link Карта проезда
-							a(href="#").link История заказов
+						.main_header__search.search
+							form.search__form
+								input(type="text" placeholder="iMac 27 дюймов").search__input
+								button(type="submit").search__submit Поиск
+						.main_header__links
+							a(href="#").main_header__link.link Карта проезда
+							a(href="#").main_header__link.link История заказов
 						.main_header__basket.basket
-							a(href="#").basket__basket_link Корзина (3)
+							a(href="#").basket__button
+								span.basket__text Корзина (3)
 							ul.basket__list
 								li.basket__item
-									img.basket__item_img
+									.basket__img_wrapper
+										img.basket__img
 									a(href="#").basket__item_link.link iPhone 6
 								li.basket__item
-									img.basket__item_img
+									.basket__img_wrapper
+										img.basket__img
 									a(href="#").basket__item_link.link iPad Air Wi-Fi + Cellural 128GB - Silver
 								li.basket__item
-									img.basket__item_img
+									.basket__img_wrapper
+										img.basket__img
 									a(href="#").basket__item_link.link Macbook Air
 				nav.shop_menu
 					.container
@@ -64,7 +69,7 @@ html(lang="ru")
 							li.shop_menu__item
 								a(href="#").shop_menu__link Мобильные телефоны
 							li.shop_menu__item
-								a(href="#").shop_menu__link Планшеты
+								a(href="#").shop_menu__link.shop_menu__link--active Планшеты
 							li.shop_menu__item
 								a(href="#").shop_menu__link Mp3 плееры
 							li.shop_menu__item
@@ -147,12 +152,12 @@ html(lang="ru")
 							 consequuntur!
 		.page_footer
 			.container
-				.page_footer__logo.second_logo
-					img.second_logo__image(src="/img/logo.jpg")
-					h1.second_logo__text ЭпплShop
-				nav.full_menu
+				.page_footer__logo.logo
+					img.logo__image(src="../img/wh-logo.png")
+					h1.logo__text ЭпплShop
+				nav.full_menu.page_footer__menu
 					.full_menu__block
-						p.full_menu__category_name О магазине
+						h6.full_menu__title О магазине
 						ul.full_menu__items
 							li.full_menu__item
 								a(href="#").full_menu__link О нас
@@ -163,7 +168,7 @@ html(lang="ru")
 							li.full_menu__item
 								a(href="#").full_menu__link Акции
 					.full_menu__block
-						p.full_menu__category_name Каталог
+						h6.full_menu__title Каталог
 						ul.full_menu__items
 							li.full_menu__item
 								a(href="#").full_menu__link Смартфоны
@@ -174,7 +179,7 @@ html(lang="ru")
 							li.full_menu__item
 								a(href="#").full_menu__link Аксесуары
 					.full_menu__block
-						p.full_menu__category_name Контакты
+						h6.full_menu__title Контакты
 						ul.full_menu__items
 							li.full_menu__item
 								a(href="#").full_menu__link Телефоны
@@ -184,6 +189,17 @@ html(lang="ru")
 								a(href="#").full_menu__link Карта проезда
 							li.full_menu__item
 								a(href="#").full_menu__link Обратная связь
+				.page_footer__apps.app_list
+					a.app_list__item.app_list__item--market-google Доступно в Google play
+					a.app_list__item.app_list__item--market-apple Доступно в AppStore
+				.page_footer__socials.social_buttons
+					ul.social_buttons__list
+						li.social_buttons__item.social_buttons__item--size-large
+							a(href="#").social_buttons__icon.social_buttons__icon--site-vk Вконтакте
+						li.social_buttons__item.social_buttons__item--size-large
+							a(href="#").social_buttons__icon.social_buttons__icon--site-fb Facebook
+						li.social_buttons__item.social_buttons__item--size-large
+							a(href="#").social_buttons__icon.social_buttons__icon--site-tw Twitter
 		<!-- build:js js/vendor.min.js -->
 		//bower:js
 		script(src='../bower_components/jquery/dist/jquery.js')
