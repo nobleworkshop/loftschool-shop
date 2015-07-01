@@ -1,0 +1,19 @@
+.contacts{
+	height: 40px;
+	background-color: $color-dark;
+	color: #fff;
+
+	&__social_buttons{
+		position: absolute;
+		left: 0;
+		top: 8px;
+	}
+	&__address{
+		margin: 7px auto;
+	}
+	&__phone{
+		position: absolute;
+		right: 0;
+		top: 5px;
+	}
+}

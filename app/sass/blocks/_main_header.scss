@@ -1,0 +1,27 @@
+.main_header{
+	height: 100px;
+	background-color: $color-light;
+
+	&__logo{
+		float: left;
+		margin-top: 25px;
+	}
+	&__search{
+		float: left;
+		margin-left: 60px;
+		margin-top: 35px;
+	}
+	&__links{
+		float: left;
+		margin-top: 45px;
+		margin-left: 5px;
+	}
+	&__link{
+		margin-left: 20px;
+		font-size: 13px;
+	}
+	&__basket{
+		float: right;
+		margin-top: 30px;
+	}
+}

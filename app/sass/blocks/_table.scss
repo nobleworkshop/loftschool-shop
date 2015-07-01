@@ -1,0 +1,17 @@
+.table{
+	width: 450px;
+	border-collapse: collapse;
+	&__row{
+		&:nth-child(2n){
+			background-color: $color-light;
+		}
+	}
+	&__cell{
+		width: 200px;
+		padding: 5px;
+		font-size: 14px;
+		&:first-child{
+			width: 250px;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.app_list{
+	&__item{
+		float: right;
+		display: block;
+		width: 90px;
+		height: 32px;
+		margin-left: 5px;
+		text-indent: -9999px;
+		&--market-apple{
+			background-image: url('../img/appstore.png');
+		}
+		&--market-google{
+			background-image: url('../img/googleplay.png');
+		}
+	}
+}

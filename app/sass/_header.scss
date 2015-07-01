@@ -1,57 +1,10 @@
 @import 'settings';
 
-.contacts{
-	height: 40px;
-	background-color: $color-dark;
-	color: #fff;
-
-	&__social_buttons{
-		position: absolute;
-		left: 0;
-		top: 8px;
-	}
-	&__address{
-		margin: 7px auto;
-	}
-	&__phone{
-		position: absolute;
-		right: 0;
-		top: 5px;
-	}
-}
-
+@import 'blocks/contacts';
 @import 'blocks/social_buttons';
 @import 'blocks/address';
 @import 'blocks/phone_number';
-
-.main_header{
-	height: 100px;
-	background-color: $color-light;
-
-	&__logo{
-		float: left;
-		margin-top: 25px;
-	}
-	&__search{
-		float: left;
-		margin-left: 60px;
-		margin-top: 35px;
-	}
-	&__links{
-		float: left;
-		margin-top: 45px;
-		margin-left: 5px;
-	}
-	&__link{
-		margin-left: 20px;
-		font-size: 13px;
-	}
-	&__basket{
-		float: right;
-		margin-top: 30px;
-	}
-}
-
+@import 'blocks/main_header';
 @import 'blocks/logo';
 @import 'blocks/search';
 @import 'blocks/basket';

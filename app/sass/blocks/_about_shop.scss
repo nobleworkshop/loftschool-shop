@@ -1,0 +1,17 @@
+.about_shop{
+	@include clearfix;
+	&__title{
+		margin-bottom: 0;
+	}
+	&__description{
+		@include clearfix;
+	}
+	&__text{
+		float: left;
+		width: 30%;
+		margin-left: 5%;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+}

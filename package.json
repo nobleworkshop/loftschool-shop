@@ -22,6 +22,7 @@
     "gulp-useref": "^1.2.0",
     "gulp.spritesmith": "^3.6.1",
     "vinyl-ftp": "^0.4.1",
-    "wiredep": "^2.2.2"
+    "wiredep": "^2.2.2",
+    "yargs": "^3.14.0"
   }
 }

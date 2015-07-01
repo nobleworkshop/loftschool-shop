@@ -1,0 +1,21 @@
+.gallery{
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+	&__lg_wrapper{
+		display: inline-block;
+		margin: auto;
+		height: 240px;
+		width: 100%;
+		line-height: 240px;
+		overflow: hidden;
+		text-align: center;
+	}
+	&__img_lg{
+		height: 100%;
+		vertical-align: middle;
+	}
+	&__slider{
+		width: 100%;
+	}
+}

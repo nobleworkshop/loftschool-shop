@@ -14,6 +14,7 @@ var gulp = require("gulp"),
 	wiredep = require('wiredep').stream,
 	browserSync = require('browser-sync'),
 	useref = require('gulp-useref'),
+	args = require('yargs').argv,
 	reload = browserSync.reload;
 
 gulp.task('default', ['server', 'watch']);
@@ -65,7 +66,7 @@ gulp.task('sass', function () {
 gulp.task('wiredep', function () {
 	gulp.src('app/jade/*.jade')
 		.pipe(wiredep({
-			directory: 'app/bower_components'
+			ignorePath: /^(\.\.\/)*\.\./
 		}))
 		.pipe(gulp.dest('app/jade/'));
 });
@@ -110,8 +111,8 @@ gulp.task('useref', function () {
 
 // Перенос шрифтов
 gulp.task('fonts', function() {
-	gulp.src('app/fonts/**/*')
-		.pipe(gulp.dest('dist/fonts/'))
+	gulp.src('app/font/**/*')
+		.pipe(gulp.dest('dist/font/'))
 });
 
 // Картинки
@@ -159,11 +160,10 @@ gulp.task('server-dist', function () {
 gulp.task( 'deploy', function() {
 
 	var conn = ftp.create( {
-			host:		 'dz1.kovalchuk.us',
-			user:		 'kovaldn_test',
-			password: 'changed',
-			parallel: 10,
-			log: gutil.log
+			host:	'karo-dev.ru',
+			user:'webmaster',
+			password: args.password,
+			parallel: 10
 	} );
 
 	var globs = [
@@ -171,6 +171,6 @@ gulp.task( 'deploy', function() {
 	];
 
 	return gulp.src(globs, { base: 'dist/', buffer: false })
-		.pipe(conn.dest( 'public_html/'));
+		.pipe(conn.dest( 'karo-dev/shop/'));
 
 });

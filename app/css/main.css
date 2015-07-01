@@ -90,6 +90,8 @@ input, button {
     margin-left: 10px; }
   .social_buttons__item:first-child {
     margin-left: 0; }
+  .social_buttons__item:hover {
+    box-shadow: 0px 0px 5px -1px white; }
 
 .social_buttons__icon {
   display: block;
@@ -301,9 +303,15 @@ input, button {
   margin-right: 20px; }
   .gallery__lg_wrapper {
     display: inline-block;
-    margin: auto; }
+    margin: auto;
+    height: 240px;
+    width: 100%;
+    line-height: 240px;
+    overflow: hidden;
+    text-align: center; }
   .gallery__img_lg {
-    width: 100%; }
+    height: 100%;
+    vertical-align: middle; }
   .gallery__slider {
     width: 100%; }
 
@@ -328,10 +336,12 @@ input, button {
       .slider__control--right:hover {
         background-image: url("../img/right_act.png"); }
   .slider__images {
+    height: 70px;
     padding: 0;
     margin: 0;
     margin-left: 30px;
     margin-right: 30px;
+    line-height: 70px;
     letter-spacing: -0.31em;
     white-space: nowrap;
     overflow: hidden;
@@ -339,23 +349,28 @@ input, button {
   .slider__item {
     display: inline-block;
     width: 30%;
+    height: 100%;
     margin-left: 5%;
+    overflow: hidden;
     cursor: pointer; }
     .slider__item:first-child {
       margin-left: 0; }
   .slider__image {
+    vertical-align: middle;
     width: 100%; }
 
 .product_info__title {
   color: #00b9fe; }
 
 .table {
-  width: 450px; }
+  width: 450px;
+  border-collapse: collapse; }
   .table__row:nth-child(2n) {
     background-color: #edf2f8; }
   .table__cell {
     width: 200px;
-    padding: 5px; }
+    padding: 5px;
+    font-size: 14px; }
     .table__cell:first-child {
       width: 250px; }
 
