@@ -114,7 +114,7 @@
 .about_shop{
 	@include clearfix;
 	&__title{
-		margin-bottom: 0px;
+		margin-bottom: 0;
 	}
 	&__description{
 		@include clearfix;

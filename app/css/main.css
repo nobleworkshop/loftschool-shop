@@ -365,7 +365,7 @@ input, button {
   clear: both; }
 
 .about_shop__title {
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
 
 .about_shop__description:after, .about_shop__description:before {
   content: "";
