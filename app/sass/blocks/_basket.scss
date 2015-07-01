@@ -1,4 +1,5 @@
 .basket{
+	position: relative;
 	&__button{
 		display: block;
 		padding-left: 40px;
@@ -9,11 +10,58 @@
 		background-image: url('../img/basket.png');
 		background-repeat: no-repeat;
 		background-position: 10px center;
-	}
-	&__list{
-		display: none;
+		&:hover ~ .basket__list{
+			display: block;
+		}
 	}
 	&__text{
 		font-size: 13px;
+	}
+	&__list{
+		position: absolute;
+		top: 100%;
+		right: 0;
+		z-index: 100;
+
+		display: none;
+		width: 200px;
+		padding: 0;
+		margin: 0;
+		border: $color-light 1px solid;
+		list-style: none;
+		background-color: #fff;
+		&:hover{
+			display: block;
+		}
+	}
+	&__item{
+		display: table;
+		width: 100%;
+		padding: 10px;
+		border-top: $color-light 1px solid;
+		box-sizing: border-box;
+		text-align: left;
+		&:hover{
+			background-color: $color-grey;
+		}
+		&:first-child{
+			margin-top: none;
+		}
+	}
+	&__link{
+		display: table-cell;
+		vertical-align: middle;
+		&:hover{
+			color: $color-bright;
+		}
+	}
+	&__img_wrapper{
+		display: table-cell;
+		vertical-align: middle;
+		width: 40px;
+		padding-right: 10px
+	}
+	&__img{
+		width: 100%;
 	}
 }

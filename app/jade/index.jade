@@ -7,6 +7,7 @@ html(lang="ru")
 		meta(name="keywords" content="shop apple mac iphone ipad")
 		meta(name="author" content="Alex")
 		<!-- build:css css/main.min.css -->
+		link(rel="stylesheet", href="../css/fonts.css")
 		link(rel="stylesheet", href="../css/main.css")
 		<!-- endbuild -->
 		<!-- build:css css/vendor.min.css -->
@@ -30,9 +31,9 @@ html(lang="ru")
 									a(href="#").social_buttons__icon.social_buttons__icon--site-fb Facebook
 								li.social_buttons__item
 									a(href="#").social_buttons__icon.social_buttons__icon--site-tw Twitter
-						.address.contacts__address
-							a(href="#").address__link г. Москва ул. Новая 24б, офис 214
-						.contacts__phone.phone_number
+						a(href="#").address.contacts__address
+							.address__link г. Москва ул. Новая 24б, офис 214
+						a.contacts__phone.phone_number(href="tel:+79213221232")
 							span.phone_number__prefix +7 (921)
 							span.phone_number__text 322 12 32
 				.main_header
@@ -53,16 +54,16 @@ html(lang="ru")
 							ul.basket__list
 								li.basket__item
 									.basket__img_wrapper
-										img.basket__img
-									a(href="#").basket__item_link.link iPhone 6
+										img(src="../img/ipad-1.jpeg").basket__img
+									a(href="#").basket__link.link iPhone 6
 								li.basket__item
 									.basket__img_wrapper
-										img.basket__img
-									a(href="#").basket__item_link.link iPad Air Wi-Fi + Cellural 128GB - Silver
+										img(src="../img/ipad-1.jpeg").basket__img
+									a(href="#").basket__link.link iPad Air Wi-Fi + Cellural 128GB - Silver
 								li.basket__item
 									.basket__img_wrapper
-										img.basket__img
-									a(href="#").basket__item_link.link Macbook Air
+										img(src="../img/ipad-1.jpeg").basket__img
+									a(href="#").basket__link.link Macbook Air
 				nav.shop_menu
 					.container
 						ul.shop_menu__list
@@ -89,67 +90,90 @@ html(lang="ru")
 							li.breadcrumbs__item
 								span.breadcrumbs__current iPad Air Wi-Fi + Cellural 128GB - Silver
 					.product
-						.product__gallery
+						.product__gallery.gallery
+							.gallery__lg_wrapper
+								img(src="../img/ipad-1.jpeg").gallery__img_lg.js-slider-lg-img
+							.gallery__slider.slider
+								a(href="").slider__control.slider__control--left.js-slider-left Влево
+								a(href="").slider__control.slider__control--right.js-slider-right Вправо
+								ul.slider__images
+									li.slider__item.slider__item--active
+										img(src="../img/ipad-1.jpeg").slider__image
+									li.slider__item.slider__item--active
+										img(src="../img/ipad-1.jpeg").slider__image
+									li.slider__item.slider__item--active
+										img(src="../img/ipad-1.jpeg").slider__image
+									li.slider__item
+										img(src="../img/ipad-1.jpeg").slider__image
+									li.slider__item
+										img(src="../img/ipad-1.jpeg").slider__image
+									li.slider__item
+										img(src="../img/ipad-1.jpeg").slider__image
+
 						.product__info.product_info
-							h2.product_info__name iPad Air Wi-Fi + Cellural 128GB - Silver
+							h2.product_info__title iPad Air Wi-Fi + Cellural 128GB - Silver
 							.product_info__description
-								//Контент-часть, без классов
-								table
-									tr
-										td Артикул
-										td 54476574
-									tr
-										td Опция
-										td включена
-									tr
-										td Цвет
-										td серебристый
-									tr
-										td Артикул
-										td 54476574
-									tr
-										td Опция
-										td включена
-									tr
-										td Цвет
-										td серебристый
-									tr
-										td Артикул
-										td 54476574
-									tr
-										td Опция
-										td включена
-									tr
-										td Цвет
-										td серебристый
+								table.table
+									tr.table__row
+										td.table__cell Артикул
+										td.table__cell 54476574
+									tr.table__row
+										td.table__cell Опция
+										td.table__cell включена
+									tr.table__row
+										td.table__cell Цвет
+										td.table__cell серебристый
+									tr.table__row
+										td.table__cell Артикул
+										td.table__cell 54476574
+									tr.table__row
+										td.table__cell Опция
+										td.table__cell включена
+									tr.table__row
+										td.table__cell Цвет
+										td.table__cell серебристый
+									tr.table__row
+										td.table__cell Артикул
+										td.table__cell 54476574
+									tr.table__row
+										td.table__cell Опция
+										td.table__cell включена
+									tr.table__row
+										td.table__cell Цвет
+										td.table__cell серебристый
+									tr.table__row
+										td.table__cell Цвет
+										td.table__cell серебристый
 					.about_shop
 						h2.about_shop__title Пара слов о магазине
-						p.about_shop__text.
-							 Lorem ipsum dolor sit amet, consectetur 
-							 adipisicing elit. Voluptatibus dolores, 
-							 enim amet non saepe atque vel natus illo 
-							 quia error repudiandae pariatur ab cumque 
-							 cum est sapiente sed quaerat assumenda voluptas 
-							 nisi modi dicta? Et accusamus nemo alias, ab 
-							 hic totam magni temporibus, assumenda porro qui, 
-							 soluta fuga sequi repudiandae.
-						p.about_shop__text.
-							 Lorem ipsum dolor sit amet, consectetur 
-							 adipisicing elit. Quam iste, doloremque ducimus 
-							 beatae, cupiditate veritatis corrupti sapiente 
-							 sed unde nesciunt, expedita velit, architecto! 
-							 Aliquid distinctio explicabo ducimus consequatur, 
-							 eveniet unde quas a sint qui quam nihil numquam, 
-							 corporis eligendi omnis!
-						p.about_shop__text.
-							 Lorem ipsum dolor sit amet, consectetur 
-							 adipisicing elit. Possimus reprehenderit 
-							 quibusdam excepturi iusto, quaerat vel facere 
-							 eaque consequatur dignissimos porro ipsam 
-							 laborum. Voluptas veniam eveniet quo dolorum 
-							 aliquam, repellendus quasi voluptatibus labore! 
-							 Modi quis libero deleniti, molestias, non rem 
-							 consequuntur!
+						.about_shop__description
+							p.about_shop__text.
+								 Lorem ipsum dolor sit amet, consectetur 
+								 adipisicing elit. Voluptatibus dolores, 
+								 enim amet non saepe atque vel natus illo 
+								 quia error repudiandae pariatur ab cumque 
+								 cum est sapiente sed quaerat assumenda voluptas 
+								 nisi modi dicta? Et accusamus nemo alias, ab 
+								 hic totam magni temporibus, assumenda porro qui, 
+								 soluta fuga sequi repudiandae.
+							p.about_shop__text.
+								 Lorem ipsum dolor sit amet, consectetur 
+								 adipisicing elit. Quam iste, doloremque ducimus 
+								 beatae, cupiditate veritatis corrupti sapiente 
+								 sed unde nesciunt, expedita velit, architecto! 
+								 Aliquid distinctio explicabo ducimus consequatur, 
+								 eveniet unde quas a sint qui quam nihil numquam, 
+								 corporis eligendi omnis!
+							p.about_shop__text.
+								 Lorem ipsum dolor sit amet, consectetur 
+								 adipisicing elit. Possimus reprehenderit 
+								 quibusdam excepturi iusto, quaerat vel facere 
+								 eaque consequatur dignissimos porro ipsam 
+								 laborum. Voluptas veniam eveniet quo dolorum 
+								 aliquam, repellendus quasi voluptatibus labore! 
+								 Modi quis libero deleniti, molestias, non rem 
+								 consequuntur!
+							a(href="").up_button.js-up-button Наверх
 		.page_footer
 			.container
 				.page_footer__logo.logo
@@ -190,8 +214,8 @@ html(lang="ru")
 							li.full_menu__item
 								a(href="#").full_menu__link Обратная связь
 				.page_footer__apps.app_list
-					a.app_list__item.app_list__item--market-google Доступно в Google play
-					a.app_list__item.app_list__item--market-apple Доступно в AppStore
+					a(href="#").app_list__item.app_list__item--market-google Доступно в Google play
+					a(href="#").app_list__item.app_list__item--market-apple Доступно в AppStore
 				.page_footer__socials.social_buttons
 					ul.social_buttons__list
 						li.social_buttons__item.social_buttons__item--size-large

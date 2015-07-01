@@ -11,7 +11,8 @@
 	}
 	&__menu{
 		display: table;
-		margin: 50px auto;
+		margin: auto;
+		margin-top: 50px;
 	}
 	&__apps{
 		position: absolute;
@@ -26,13 +27,14 @@
 }
 .full_menu{
 	&__block{
+		font-size: 15px;
 		display: inline-block;
 		width: 160px;
 	}
 	&__title{
 		font-weight: bold;
 		margin-top: 0;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 	}
 	&__items{
 		list-style: none;
@@ -40,7 +42,7 @@
 		padding: 0;
 	}
 	&__item{
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 	}
 }
 .app_list{

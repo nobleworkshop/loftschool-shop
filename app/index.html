@@ -6,6 +6,7 @@
 		<meta name="description" content="Магазин техники и аксесуаров Apple">
 		<meta name="keywords" content="shop apple mac iphone ipad">
 		<meta name="author" content="Alex"><!-- build:css css/main.min.css -->
+		<link rel="stylesheet" href="../css/fonts.css">
 		<link rel="stylesheet" href="../css/main.css"><!-- endbuild -->
 		<!-- build:css css/vendor.min.css -->
 		<!--bower:css-->
@@ -25,9 +26,8 @@
 								<li class="social_buttons__item"><a href="#" class="social_buttons__icon social_buttons__icon--site-fb">Facebook</a></li>
 								<li class="social_buttons__item"><a href="#" class="social_buttons__icon social_buttons__icon--site-tw">Twitter</a></li>
 							</ul>
-						</div>
-						<div class="address contacts__address"><a href="#" class="address__link">г. Москва ул. Новая 24б, офис 214</a></div>
-						<div class="contacts__phone phone_number"><span class="phone_number__prefix">+7 (921)</span><span class="phone_number__text">322 12 32</span></div>
+						</div><a href="#" class="address contacts__address">
+							<div class="address__link">г. Москва ул. Новая 24б, офис 214</div></a><a href="tel:+79213221232" class="contacts__phone phone_number"><span class="phone_number__prefix">+7 (921)</span><span class="phone_number__text">322 12 32</span></a>
 					</div>
 				</div>
 				<div class="main_header">
@@ -45,13 +45,13 @@
 						<div class="main_header__basket basket"><a href="#" class="basket__button"><span class="basket__text">Корзина (3)</span></a>
 							<ul class="basket__list">
 								<li class="basket__item">
-									<div class="basket__img_wrapper"><img class="basket__img"></div><a href="#" class="basket__item_link link">iPhone 6</a>
+									<div class="basket__img_wrapper"><img src="../img/ipad-1.jpeg" class="basket__img"></div><a href="#" class="basket__link link">iPhone 6</a>
 								</li>
 								<li class="basket__item">
-									<div class="basket__img_wrapper"><img class="basket__img"></div><a href="#" class="basket__item_link link">iPad Air Wi-Fi + Cellural 128GB - Silver</a>
+									<div class="basket__img_wrapper"><img src="../img/ipad-1.jpeg" class="basket__img"></div><a href="#" class="basket__link link">iPad Air Wi-Fi + Cellural 128GB - Silver</a>
 								</li>
 								<li class="basket__item">
-									<div class="basket__img_wrapper"><img class="basket__img"></div><a href="#" class="basket__item_link link">Macbook Air</a>
+									<div class="basket__img_wrapper"><img src="../img/ipad-1.jpeg" class="basket__img"></div><a href="#" class="basket__link link">Macbook Air</a>
 								</li>
 							</ul>
 						</div>
@@ -80,47 +80,62 @@
 						</ul>
 					</div>
 					<div class="product">
-						<div class="product__gallery"></div>
+						<div class="product__gallery gallery">
+							<div class="gallery__lg_wrapper"><img src="../img/ipad-1.jpeg" class="gallery__img_lg js-slider-lg-img"></div>
+							<div class="gallery__slider slider"><a href="" class="slider__control slider__control--left js-slider-left">Влево</a><a href="" class="slider__control slider__control--right js-slider-right">Вправо</a>
+								<ul class="slider__images">
+									<li class="slider__item slider__item--active"><img src="../img/ipad-1.jpeg" class="slider__image"></li>
+									<li class="slider__item slider__item--active"><img src="../img/ipad-1.jpeg" class="slider__image"></li>
+									<li class="slider__item slider__item--active"><img src="../img/ipad-1.jpeg" class="slider__image"></li>
+									<li class="slider__item"><img src="../img/ipad-1.jpeg" class="slider__image"></li>
+									<li class="slider__item"><img src="../img/ipad-1.jpeg" class="slider__image"></li>
+									<li class="slider__item"><img src="../img/ipad-1.jpeg" class="slider__image"></li>
+								</ul>
+							</div>
+						</div>
 						<div class="product__info product_info">
-							<h2 class="product_info__name">iPad Air Wi-Fi + Cellural 128GB - Silver</h2>
+							<h2 class="product_info__title">iPad Air Wi-Fi + Cellural 128GB - Silver</h2>
 							<div class="product_info__description">
-								<!--Контент-часть, без классов-->
-								<table>
-									<tr>
-										<td>Артикул</td>
-										<td>54476574</td>
+								<table class="table">
+									<tr class="table__row">
+										<td class="table__cell">Артикул</td>
+										<td class="table__cell">54476574</td>
 									</tr>
-									<tr>
-										<td>Опция</td>
-										<td>включена</td>
+									<tr class="table__row">
+										<td class="table__cell">Опция</td>
+										<td class="table__cell">включена</td>
 									</tr>
-									<tr>
-										<td>Цвет</td>
-										<td>серебристый</td>
+									<tr class="table__row">
+										<td class="table__cell">Цвет</td>
+										<td class="table__cell">серебристый</td>
 									</tr>
-									<tr>
-										<td>Артикул</td>
-										<td>54476574</td>
+									<tr class="table__row">
+										<td class="table__cell">Артикул</td>
+										<td class="table__cell">54476574</td>
 									</tr>
-									<tr>
-										<td>Опция</td>
-										<td>включена</td>
+									<tr class="table__row">
+										<td class="table__cell">Опция</td>
+										<td class="table__cell">включена</td>
 									</tr>
-									<tr>
-										<td>Цвет</td>
-										<td>серебристый</td>
+									<tr class="table__row">
+										<td class="table__cell">Цвет</td>
+										<td class="table__cell">серебристый</td>
 									</tr>
-									<tr>
-										<td>Артикул</td>
-										<td>54476574</td>
+									<tr class="table__row">
+										<td class="table__cell">Артикул</td>
+										<td class="table__cell">54476574</td>
 									</tr>
-									<tr>
-										<td>Опция</td>
-										<td>включена</td>
+									<tr class="table__row">
+										<td class="table__cell">Опция</td>
+										<td class="table__cell">включена</td>
 									</tr>
-									<tr>
-										<td>Цвет</td>
-										<td>серебристый</td>
+									<tr class="table__row">
+										<td class="table__cell">Цвет</td>
+										<td class="table__cell">серебристый</td>
+									</tr>
+									<tr class="table__row">
+										<td class="table__cell">Цвет</td>
+										<td class="table__cell">серебристый</td>
 									</tr>
 								</table>
 							</div>
@@ -128,35 +143,37 @@
 					</div>
 					<div class="about_shop">
 						<h2 class="about_shop__title">Пара слов о магазине</h2>
-						<p class="about_shop__text">
-							 Lorem ipsum dolor sit amet, consectetur 
-							 adipisicing elit. Voluptatibus dolores, 
-							 enim amet non saepe atque vel natus illo 
-							 quia error repudiandae pariatur ab cumque 
-							 cum est sapiente sed quaerat assumenda voluptas 
-							 nisi modi dicta? Et accusamus nemo alias, ab 
-							 hic totam magni temporibus, assumenda porro qui, 
-							 soluta fuga sequi repudiandae.
-						</p>
-						<p class="about_shop__text">
-							 Lorem ipsum dolor sit amet, consectetur 
-							 adipisicing elit. Quam iste, doloremque ducimus 
-							 beatae, cupiditate veritatis corrupti sapiente 
-							 sed unde nesciunt, expedita velit, architecto! 
-							 Aliquid distinctio explicabo ducimus consequatur, 
-							 eveniet unde quas a sint qui quam nihil numquam, 
-							 corporis eligendi omnis!
-						</p>
-						<p class="about_shop__text">
-							 Lorem ipsum dolor sit amet, consectetur 
-							 adipisicing elit. Possimus reprehenderit 
-							 quibusdam excepturi iusto, quaerat vel facere 
-							 eaque consequatur dignissimos porro ipsam 
-							 laborum. Voluptas veniam eveniet quo dolorum 
-							 aliquam, repellendus quasi voluptatibus labore! 
-							 Modi quis libero deleniti, molestias, non rem 
-							 consequuntur!
-						</p>
+						<div class="about_shop__description">
+							<p class="about_shop__text">
+								 Lorem ipsum dolor sit amet, consectetur 
+								 adipisicing elit. Voluptatibus dolores, 
+								 enim amet non saepe atque vel natus illo 
+								 quia error repudiandae pariatur ab cumque 
+								 cum est sapiente sed quaerat assumenda voluptas 
+								 nisi modi dicta? Et accusamus nemo alias, ab 
+								 hic totam magni temporibus, assumenda porro qui, 
+								 soluta fuga sequi repudiandae.
+							</p>
+							<p class="about_shop__text">
+								 Lorem ipsum dolor sit amet, consectetur 
+								 adipisicing elit. Quam iste, doloremque ducimus 
+								 beatae, cupiditate veritatis corrupti sapiente 
+								 sed unde nesciunt, expedita velit, architecto! 
+								 Aliquid distinctio explicabo ducimus consequatur, 
+								 eveniet unde quas a sint qui quam nihil numquam, 
+								 corporis eligendi omnis!
+							</p>
+							<p class="about_shop__text">
+								 Lorem ipsum dolor sit amet, consectetur 
+								 adipisicing elit. Possimus reprehenderit 
+								 quibusdam excepturi iusto, quaerat vel facere 
+								 eaque consequatur dignissimos porro ipsam 
+								 laborum. Voluptas veniam eveniet quo dolorum 
+								 aliquam, repellendus quasi voluptatibus labore! 
+								 Modi quis libero deleniti, molestias, non rem 
+								 consequuntur!
+							</p><a href="" class="up_button js-up-button">Наверх</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -195,7 +212,7 @@
 						</ul>
 					</div>
 				</nav>
-				<div class="page_footer__apps app_list"><a class="app_list__item app_list__item--market-google">Доступно в Google play</a><a class="app_list__item app_list__item--market-apple">Доступно в AppStore</a></div>
+				<div class="page_footer__apps app_list"><a href="#" class="app_list__item app_list__item--market-google">Доступно в Google play</a><a href="#" class="app_list__item app_list__item--market-apple">Доступно в AppStore</a></div>
 				<div class="page_footer__socials social_buttons">
 					<ul class="social_buttons__list">
 						<li class="social_buttons__item social_buttons__item--size-large"><a href="#" class="social_buttons__icon social_buttons__icon--site-vk">Вконтакте</a></li>
