@@ -37,9 +37,7 @@ gulp.task('watch', function () {
 	gulp.watch('app/sass/**/*.scss', ['sass']);
 	gulp.watch('bower.json', ['wiredep']);
 	gulp.watch([
-		'app/js/**/*.js',
-		'app/css/**/*.css',
-		'app/*.html'
+		'app/js/**/*.js'
 	]).on('change', reload);
 });
 
@@ -49,7 +47,8 @@ gulp.task('jade', function() {
 		.pipe(jade({
 			pretty: '	'
 		}))
-		.pipe(gulp.dest('./app/'));
+		.pipe(gulp.dest('./app/'))
+		.pipe(reload({stream: true}));
 });
 
 // Компилируем SCSS
@@ -59,7 +58,8 @@ gulp.task('sass', function () {
 		.pipe(autoprefixer({
 			browsers: ['> 1% in RU']
 		}))
-		.pipe(gulp.dest('./app/css/'));
+		.pipe(gulp.dest('./app/css/'))
+		.pipe(reload({stream: true}));
 });
 
 // Подключаем ссылки на bower components

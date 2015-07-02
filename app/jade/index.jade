@@ -21,6 +21,10 @@ html(lang="ru")
 		//
 		<!-- endbuild -->
 		link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
+		//-dirty hack IE8
+		<!--[if IE 8]>
+		<style>.shop_menu__link:before,.shop_menu__link:after{display: none} .shop_menu__link{padding:10px 20px</style>
+		<![endif]-->
 	body
 		.main_page
 			header.page_header
@@ -28,12 +32,12 @@ html(lang="ru")
 					.container
 						.contacts__social_buttons.social_buttons
 							ul.social_buttons__list
-								li.social_buttons__item
-									a(href="#").social_buttons__icon.social_buttons__icon--site-vk Вконтакте
-								li.social_buttons__item
-									a(href="#").social_buttons__icon.social_buttons__icon--site-fb Facebook
-								li.social_buttons__item
-									a(href="#").social_buttons__icon.social_buttons__icon--site-tw Twitter
+								li.social_buttons__item.social_buttons__item--size-mini
+									a(href="#").social_buttons__icon.social_buttons__icon--site-minivk Вконтакте
+								li.social_buttons__item.social_buttons__item--size-mini
+									a(href="#").social_buttons__icon.social_buttons__icon--site-minifb Facebook
+								li.social_buttons__item.social_buttons__item--size-mini
+									a(href="#").social_buttons__icon.social_buttons__icon--site-minitw Twitter
 						a(href="#").address.contacts__address
 							.address__link г. Москва ул. Новая 24б, офис 214
 						a.contacts__phone.phone_number(href="tel:+79213221232")
@@ -42,7 +46,8 @@ html(lang="ru")
 				.main_header
 					.container
 						.main_header__logo.logo
-							img.logo__image(src='img/logo.png')
+							a(href="").logo__link
+								img.logo__image(src='img/logo.png')
 							h1.logo__text ЭпплShop
 						.main_header__search.search
 							form.search__form
@@ -119,38 +124,38 @@ html(lang="ru")
 
 						.product__info.product_info
 							h2.product_info__title iPad Air Wi-Fi + Cellural 128GB - Silver
-							.product_info__description
-								table.table
-									tr.table__row
-										td.table__cell Артикул
-										td.table__cell 54476574
-									tr.table__row
-										td.table__cell Опция
-										td.table__cell включена
-									tr.table__row
-										td.table__cell Цвет
-										td.table__cell серебристый
-									tr.table__row
-										td.table__cell Артикул
-										td.table__cell 54476574
-									tr.table__row
-										td.table__cell Опция
-										td.table__cell включена
-									tr.table__row
-										td.table__cell Цвет
-										td.table__cell серебристый
-									tr.table__row
-										td.table__cell Артикул
-										td.table__cell 54476574
-									tr.table__row
-										td.table__cell Опция
-										td.table__cell включена
-									tr.table__row
-										td.table__cell Цвет
-										td.table__cell серебристый
-									tr.table__row
-										td.table__cell Цвет
-										td.table__cell серебристый
+							//Контентная часть
+							table
+								tr
+									td Артикул
+									td 54476574
+								tr
+									td Опция
+									td включена
+								tr
+									td Цвет
+									td серебристый
+								tr
+									td Артикул
+									td 54476574
+								tr
+									td Опция
+									td включена
+								tr
+									td Цвет
+									td серебристый
+								tr
+									td Артикул
+									td 54476574
+								tr
+									td Опция
+									td включена
+								tr
+									td Цвет
+									td серебристый
+								tr
+									td Цвет
+									td серебристый
 					.about_shop
 						h2.about_shop__title Пара слов о магазине
 						.about_shop__description
@@ -184,7 +189,8 @@ html(lang="ru")
 		.page_footer
 			.container
 				.page_footer__logo.logo
-					img.logo__image(src="img/wh-logo.png")
+					a(href="").logo__link
+						img.logo__image(src="img/wh-logo.png")
 					h1.logo__text ЭпплShop
 				nav.full_menu.page_footer__menu
 					.full_menu__block
@@ -225,11 +231,11 @@ html(lang="ru")
 					a(href="#").app_list__item.app_list__item--market-apple Доступно в AppStore
 				.page_footer__socials.social_buttons
 					ul.social_buttons__list
-						li.social_buttons__item.social_buttons__item--size-large
+						li.social_buttons__item.social_buttons__item
 							a(href="#").social_buttons__icon.social_buttons__icon--site-vk Вконтакте
-						li.social_buttons__item.social_buttons__item--size-large
+						li.social_buttons__item.social_buttons__item
 							a(href="#").social_buttons__icon.social_buttons__icon--site-fb Facebook
-						li.social_buttons__item.social_buttons__item--size-large
+						li.social_buttons__item.social_buttons__item
 							a(href="#").social_buttons__icon.social_buttons__icon--site-tw Twitter
 		<!-- build:js js/vendor.min.js -->
 		//bower:js

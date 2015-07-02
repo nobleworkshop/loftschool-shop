@@ -2,4 +2,20 @@
 	&__title{
 		color: $color-bright;
 	}
+	table{
+		width: 450px;
+	}
+	tr{
+		&:nth-child(2n){
+			background-color: $color-light;
+		}
+	}
+	td{
+		width: 200px;
+		padding: 5px;
+		font-size: 14px;
+		&:first-child{
+			width: 250px;
+		}
+	}
 }

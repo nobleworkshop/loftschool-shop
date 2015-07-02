@@ -16,7 +16,9 @@
 		<!-- build:js js/modernizr.min.js -->
 		<script src="/bower_components/modernizr/modernizr.js"></script>
 		<!----><!-- endbuild -->
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"><!--[if IE 8]>
+		<style>.shop_menu__link:before,.shop_menu__link:after{display: none} .shop_menu__link{padding:10px 20px</style>
+		<![endif]-->
 	</head>
 	<body>
 		<div class="main_page">
@@ -25,9 +27,9 @@
 					<div class="container">
 						<div class="contacts__social_buttons social_buttons">
 							<ul class="social_buttons__list">
-								<li class="social_buttons__item"><a href="#" class="social_buttons__icon social_buttons__icon--site-vk">Вконтакте</a></li>
-								<li class="social_buttons__item"><a href="#" class="social_buttons__icon social_buttons__icon--site-fb">Facebook</a></li>
-								<li class="social_buttons__item"><a href="#" class="social_buttons__icon social_buttons__icon--site-tw">Twitter</a></li>
+								<li class="social_buttons__item social_buttons__item--size-mini"><a href="#" class="social_buttons__icon social_buttons__icon--site-minivk">Вконтакте</a></li>
+								<li class="social_buttons__item social_buttons__item--size-mini"><a href="#" class="social_buttons__icon social_buttons__icon--site-minifb">Facebook</a></li>
+								<li class="social_buttons__item social_buttons__item--size-mini"><a href="#" class="social_buttons__icon social_buttons__icon--site-minitw">Twitter</a></li>
 							</ul>
 						</div><a href="#" class="address contacts__address">
 							<div class="address__link">г. Москва ул. Новая 24б, офис 214</div></a><a href="tel:+79213221232" class="contacts__phone phone_number"><span class="phone_number__prefix">+7 (921)</span><span class="phone_number__text">322 12 32</span></a>
@@ -35,7 +37,7 @@
 				</div>
 				<div class="main_header">
 					<div class="container">
-						<div class="main_header__logo logo"><img src="img/logo.png" class="logo__image">
+						<div class="main_header__logo logo"><a href="" class="logo__link"><img src="img/logo.png" class="logo__image"></a>
 							<h1 class="logo__text">ЭпплShop</h1>
 						</div>
 						<div class="main_header__search search">
@@ -100,50 +102,49 @@
 						</div>
 						<div class="product__info product_info">
 							<h2 class="product_info__title">iPad Air Wi-Fi + Cellural 128GB - Silver</h2>
-							<div class="product_info__description">
-								<table class="table">
-									<tr class="table__row">
-										<td class="table__cell">Артикул</td>
-										<td class="table__cell">54476574</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Опция</td>
-										<td class="table__cell">включена</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Цвет</td>
-										<td class="table__cell">серебристый</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Артикул</td>
-										<td class="table__cell">54476574</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Опция</td>
-										<td class="table__cell">включена</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Цвет</td>
-										<td class="table__cell">серебристый</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Артикул</td>
-										<td class="table__cell">54476574</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Опция</td>
-										<td class="table__cell">включена</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Цвет</td>
-										<td class="table__cell">серебристый</td>
-									</tr>
-									<tr class="table__row">
-										<td class="table__cell">Цвет</td>
-										<td class="table__cell">серебристый</td>
-									</tr>
-								</table>
-							</div>
+							<!--Контентная часть-->
+							<table>
+								<tr>
+									<td>Артикул</td>
+									<td>54476574</td>
+								</tr>
+								<tr>
+									<td>Опция</td>
+									<td>включена</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>серебристый</td>
+								</tr>
+								<tr>
+									<td>Артикул</td>
+									<td>54476574</td>
+								</tr>
+								<tr>
+									<td>Опция</td>
+									<td>включена</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>серебристый</td>
+								</tr>
+								<tr>
+									<td>Артикул</td>
+									<td>54476574</td>
+								</tr>
+								<tr>
+									<td>Опция</td>
+									<td>включена</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>серебристый</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>серебристый</td>
+								</tr>
+							</table>
 						</div>
 					</div>
 					<div class="about_shop">
@@ -185,7 +186,7 @@
 		</div>
 		<div class="page_footer">
 			<div class="container">
-				<div class="page_footer__logo logo"><img src="img/wh-logo.png" class="logo__image">
+				<div class="page_footer__logo logo"><a href="" class="logo__link"><img src="img/wh-logo.png" class="logo__image"></a>
 					<h1 class="logo__text">ЭпплShop</h1>
 				</div>
 				<nav class="full_menu page_footer__menu">
@@ -220,9 +221,9 @@
 				<div class="page_footer__apps app_list"><a href="#" class="app_list__item app_list__item--market-google">Доступно в Google play</a><a href="#" class="app_list__item app_list__item--market-apple">Доступно в AppStore</a></div>
 				<div class="page_footer__socials social_buttons">
 					<ul class="social_buttons__list">
-						<li class="social_buttons__item social_buttons__item--size-large"><a href="#" class="social_buttons__icon social_buttons__icon--site-vk">Вконтакте</a></li>
-						<li class="social_buttons__item social_buttons__item--size-large"><a href="#" class="social_buttons__icon social_buttons__icon--site-fb">Facebook</a></li>
-						<li class="social_buttons__item social_buttons__item--size-large"><a href="#" class="social_buttons__icon social_buttons__icon--site-tw">Twitter</a></li>
+						<li class="social_buttons__item social_buttons__item"><a href="#" class="social_buttons__icon social_buttons__icon--site-vk">Вконтакте</a></li>
+						<li class="social_buttons__item social_buttons__item"><a href="#" class="social_buttons__icon social_buttons__icon--site-fb">Facebook</a></li>
+						<li class="social_buttons__item social_buttons__item"><a href="#" class="social_buttons__icon social_buttons__icon--site-tw">Twitter</a></li>
 					</ul>
 				</div>
 			</div>
