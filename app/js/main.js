@@ -122,12 +122,17 @@ var slider = function() {
 	}
 };
 //Init slider
-var mainSlider = slider();
-mainSlider.init({
-	slider: '.js-slider-list',
-	leftControl: '.js-slider-left',
-	rightControl: '.js-slider-right',
-	image: '.js-slider-lg-img'
-});
+if(document.querySelector('.js-slider-list')){
+	var mainSlider = slider();
+	mainSlider.init({
+		slider: '.js-slider-list',
+		leftControl: '.js-slider-left',
+		rightControl: '.js-slider-right',
+		image: '.js-slider-lg-img'
+	});
+}
 //Init scroll
-$('.js-up-button').scroller();
+
+if(document.querySelector('.js-up-button')){
+	$('.js-up-button').scroller();
+}

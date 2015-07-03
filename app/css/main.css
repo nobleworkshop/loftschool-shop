@@ -155,6 +155,9 @@ input, button {
     float: right;
     margin-top: 30px; }
 
+.logo__link {
+  display: block; }
+
 .logo__text {
   position: absolute;
   text-indent: -9999px; }
@@ -244,6 +247,11 @@ input, button {
     float: left; }
     .shop_menu__item:first-child .shop_menu__link {
       padding-left: 20px; }
+    .shop_menu__item:last-child .shop_menu__link {
+      padding-right: 40px; }
+    .shop_menu__item:last-child .shop_menu__link:after,
+    .shop_menu__item:last-child .shop_menu__link:before {
+      display: none; }
   .shop_menu__link {
     position: relative;
     display: block;
@@ -287,6 +295,18 @@ input, button {
   padding-top: 20px;
   padding-bottom: 50px; }
 
+.product:after, .product:before {
+  content: "";
+  display: table;
+  clear: both; }
+
+.product__gallery {
+  float: left;
+  margin-right: 20px; }
+
+.product__info {
+  float: left; }
+
 .breadcrumbs__list {
   list-style: none;
   padding: 0;
@@ -304,9 +324,7 @@ input, button {
     display: none; }
 
 .gallery {
-  float: left;
-  width: 300px;
-  margin-right: 20px; }
+  width: 300px; }
   .gallery__lg_wrapper {
     display: inline-block;
     margin: auto;
@@ -381,25 +399,20 @@ input, button {
   .product_info td:first-child {
     width: 250px; }
 
-.about_shop:after, .about_shop:before {
-  content: "";
-  display: table;
-  clear: both; }
-
 .about_shop__title {
   margin-bottom: 0; }
 
-.about_shop__description:after, .about_shop__description:before {
-  content: "";
-  display: table;
-  clear: both; }
+.about_shop__description {
+  margin-right: -50px; }
+  .about_shop__description:after, .about_shop__description:before {
+    content: "";
+    display: table;
+    clear: both; }
 
-.about_shop__text {
+.about_shop p {
   float: left;
-  width: 30%;
-  margin-left: 5%; }
-  .about_shop__text:first-child {
-    margin-left: 0; }
+  width: 300px;
+  margin-right: 50px; }
 
 .up_button {
   display: none;
@@ -432,7 +445,7 @@ input, button {
       right: 0; } }
 
 .page_footer {
-  height: 230px;
+  min-height: 230px;
   background: #613993 url("../img/footer-bg.png");
   color: #fff; }
   .page_footer__logo {
@@ -455,12 +468,9 @@ input, button {
 .full_menu__block {
   font-size: 15px;
   display: inline-block;
-  width: 160px; }
-
-.full_menu__title {
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 5px; }
+  width: 140px;
+  margin-right: 20px;
+  vertical-align: top; }
 
 .full_menu__items {
   list-style: none;
@@ -468,6 +478,11 @@ input, button {
   padding: 0; }
 
 .full_menu__item {
+  margin-bottom: 5px; }
+
+.full_menu__title {
+  font-weight: bold;
+  margin-top: 0;
   margin-bottom: 5px; }
 
 .app_list__item {

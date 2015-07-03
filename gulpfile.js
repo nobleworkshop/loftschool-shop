@@ -112,7 +112,7 @@ gulp.task('useref', function () {
 // Перенос шрифтов
 gulp.task('fonts', function() {
 	gulp.src('app/font/**/*')
-		.pipe(gulp.dest('dist/font/'))
+		.pipe(gulp.dest('dist/font'))
 });
 
 // Картинки

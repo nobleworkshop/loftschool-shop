@@ -12,6 +12,15 @@
 		&:first-child .shop_menu__link{
 			padding-left: 20px
 		}
+		&:last-child{
+			.shop_menu__link{
+				padding-right: 40px;
+			}
+			.shop_menu__link:after, 
+			.shop_menu__link:before{
+				display: none;
+			}
+		}
 	}
 	&__link{
 		position: relative;

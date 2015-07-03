@@ -1,0 +1,11 @@
+.product{
+	@include clearfix;
+
+	&__gallery{
+		float: left;
+		margin-right: 20px;
+	}
+	&__info{
+		float: left;
+	}
+}
